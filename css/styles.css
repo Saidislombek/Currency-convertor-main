@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Livvic", "Arial", sans-serif;
+  background-color: lightpink;
+  color: palevioletred;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.box {
+  background-color: #fff;
+}
+
+.form-btn {
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(235, 126, 144);
+}
+
+.form-btn:hover {
+  color: #fff;
+}
+
+.form-btn:focus {
+  box-shadow: 0 0 0 0.2rem rgb(206, 114, 130);
+}

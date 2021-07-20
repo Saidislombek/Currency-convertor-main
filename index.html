@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency convertor</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <section class="py-5">
+    <div class="box container shadow p-5 rounded">
+      <h2 class="text-center font-weight-bold mb-5">So'mga o'girish:</h2>
+
+      <form class="d-flex flex-column align-items-center justify-content-center">
+        <div class="d-flex mb-4">
+          <div class="form-group mr-5">
+            <label class="sr-only" for="amount-input">Money amount</label>
+            <input class="amount-input form-control" id="amount-input" name="amount" type="number" placeholder="Summa"
+              min="0" step="any" autocomplete="off" required>
+          </div>
+          <div class="form-group mr-5 flex-grow-1">
+            <label class="sr-only" for="currency-select">Currencies</label>
+            <select class="currency-select form-control" name="currency" id="currency-select" required>
+              <option value="" disabled selected>Pul birliklari:</option>
+              <option value="10359.88">USD</option>
+              <option value="136.11">RUB</option>
+              <option value="12285.78">EUR</option>
+              <option value="2820.70">AED</option>
+              <option value="13509.28">GBP</option>
+            </select>
+          </div>
+          <div class="form-group d-flex">
+            <label class="sr-only" for="amount_in_UZS">Money amount in sum</label>
+            <input class="amount_in_UZS form-control mr-1" id="amount_in_UZS" name="amount_in_UZS" type="text">
+            <span class="h4">so'm</span>
+          </div>
+        </div>
+        <button class="form-btn btn px-5 font-weight-bold" type="submit">O'g'irish</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
